@@ -1,0 +1,194 @@
+{
+    "project": {
+        "name": "testApp",
+        "description": "nothing",
+        "version": "0.0.1",
+        "url": "https://example.com"
+    },
+    "files": {
+        "api\\controllers\\UserController.js": {
+            "name": "api\\controllers\\UserController.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "api\\models\\User.js": {
+            "name": "api\\models\\User.js",
+            "modules": {
+                "User": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "api\\policies\\sessionAuth.js": {
+            "name": "api\\policies\\sessionAuth.js",
+            "modules": {
+                ":: Policy": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "api\\responses\\badRequest.js": {
+            "name": "api\\responses\\badRequest.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "api\\responses\\forbidden.js": {
+            "name": "api\\responses\\forbidden.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "api\\responses\\notFound.js": {
+            "name": "api\\responses\\notFound.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "api\\responses\\ok.js": {
+            "name": "api\\responses\\ok.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "api\\responses\\serverError.js": {
+            "name": "api\\responses\\serverError.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "User": {
+            "name": "User",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "api\\models\\User.js",
+            "line": 1,
+            "description": "User.js",
+            "docs": ":: http://sailsjs.org/#!documentation/models"
+        },
+        ":: Policy": {
+            "name": ":: Policy",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "api\\policies\\sessionAuth.js",
+            "line": 1,
+            "description": "sessionAuth",
+            "docs": ":: http://sailsjs.org/#!/documentation/concepts/Policies"
+        }
+    },
+    "classes": {},
+    "elements": {},
+    "classitems": [
+        {
+            "file": "api\\controllers\\UserController.js",
+            "line": 1,
+            "description": ":: Server-side logic for managing Users",
+            "help": ":: See http://sailsjs.org/#!/documentation/concepts/Controllers",
+            "class": ""
+        },
+        {
+            "file": "api\\responses\\badRequest.js",
+            "line": 1,
+            "description": "400 (Bad Request) Handler\n\nUsage:\nreturn res.badRequest();\nreturn res.badRequest(data);\nreturn res.badRequest(data, 'some/specific/badRequest/view');\n\ne.g.:\n```\nreturn res.badRequest(\n  'Please choose a valid `password` (6-12 characters)',\n  'trial/signup'\n);\n```",
+            "class": "",
+            "module": ":: Policy"
+        },
+        {
+            "file": "api\\responses\\forbidden.js",
+            "line": 1,
+            "description": "403 (Forbidden) Handler\n\nUsage:\nreturn res.forbidden();\nreturn res.forbidden(err);\nreturn res.forbidden(err, 'some/specific/forbidden/view');\n\ne.g.:\n```\nreturn res.forbidden('Access denied.');\n```",
+            "class": "",
+            "module": ":: Policy"
+        },
+        {
+            "file": "api\\responses\\notFound.js",
+            "line": 1,
+            "description": "404 (Not Found) Handler\n\nUsage:\nreturn res.notFound();\nreturn res.notFound(err);\nreturn res.notFound(err, 'some/specific/notfound/view');\n\ne.g.:\n```\nreturn res.notFound();\n```\n\nNOTE:\nIf a request doesn't match any explicit routes (i.e. `config/routes.js`)\nor route blueprints (i.e. \"shadow routes\", Sails will call `res.notFound()`\nautomatically.",
+            "class": "",
+            "module": ":: Policy"
+        },
+        {
+            "file": "api\\responses\\ok.js",
+            "line": 1,
+            "description": "200 (OK) Response\n\nUsage:\nreturn res.ok();\nreturn res.ok(data);\nreturn res.ok(data, 'auth/login');",
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "options",
+                    "description": "- pass string to render specified view",
+                    "type": "String|Object"
+                }
+            ],
+            "class": "",
+            "module": ":: Policy"
+        },
+        {
+            "file": "api\\responses\\serverError.js",
+            "line": 1,
+            "description": "500 (Server Error) Response\n\nUsage:\nreturn res.serverError();\nreturn res.serverError(err);\nreturn res.serverError(err, 'some/specific/error/view');\n\nNOTE:\nIf something throws in a policy or controller, or an internal\nerror is encountered, Sails will call `res.serverError()`\nautomatically.",
+            "class": "",
+            "module": ":: Policy"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: help",
+            "line": " api\\controllers\\UserController.js:1"
+        },
+        {
+            "message": "unknown tag: docs",
+            "line": " api\\models\\User.js:1"
+        },
+        {
+            "message": "unknown tag: docs",
+            "line": " api\\policies\\sessionAuth.js:1"
+        },
+        {
+            "message": "Missing item type\n:: Server-side logic for managing Users",
+            "line": " api\\controllers\\UserController.js:1"
+        },
+        {
+            "message": "Missing item type\n400 (Bad Request) Handler\n\nUsage:\nreturn res.badRequest();\nreturn res.badRequest(data);\nreturn res.badRequest(data, 'some/specific/badRequest/view');\n\ne.g.:\n```\nreturn res.badRequest(\n  'Please choose a valid `password` (6-12 characters)',\n  'trial/signup'\n);\n```",
+            "line": " api\\responses\\badRequest.js:1"
+        },
+        {
+            "message": "Missing item type\n403 (Forbidden) Handler\n\nUsage:\nreturn res.forbidden();\nreturn res.forbidden(err);\nreturn res.forbidden(err, 'some/specific/forbidden/view');\n\ne.g.:\n```\nreturn res.forbidden('Access denied.');\n```",
+            "line": " api\\responses\\forbidden.js:1"
+        },
+        {
+            "message": "Missing item type\n404 (Not Found) Handler\n\nUsage:\nreturn res.notFound();\nreturn res.notFound(err);\nreturn res.notFound(err, 'some/specific/notfound/view');\n\ne.g.:\n```\nreturn res.notFound();\n```\n\nNOTE:\nIf a request doesn't match any explicit routes (i.e. `config/routes.js`)\nor route blueprints (i.e. \"shadow routes\", Sails will call `res.notFound()`\nautomatically.",
+            "line": " api\\responses\\notFound.js:1"
+        },
+        {
+            "message": "Missing item type\n200 (OK) Response\n\nUsage:\nreturn res.ok();\nreturn res.ok(data);\nreturn res.ok(data, 'auth/login');",
+            "line": " api\\responses\\ok.js:1"
+        },
+        {
+            "message": "Missing item type\n500 (Server Error) Response\n\nUsage:\nreturn res.serverError();\nreturn res.serverError(err);\nreturn res.serverError(err, 'some/specific/error/view');\n\nNOTE:\nIf something throws in a policy or controller, or an internal\nerror is encountered, Sails will call `res.serverError()`\nautomatically.",
+            "line": " api\\responses\\serverError.js:1"
+        }
+    ]
+}

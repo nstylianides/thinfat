@@ -1,0 +1,11 @@
+{
+  "name": "testApp",
+  "description": "nothing",
+  "version": "0.0.1",
+  "url": "https://example.com",
+  "options": {
+    "outdir": "docs",
+    "exclude": "node_modules",
+    "paths": ["api"]
+  }
+}
