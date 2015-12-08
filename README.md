@@ -7,4 +7,13 @@
 > the usage of it.
 > We also use services for completing actions in case were no data are involved
 
+# How to read
+> * Read the config/routes.js
+> * Read the api/controllers/*.js
+> * Read associated api/models/*.js
+> * Read related api/service/*.js
+>
+>
+>
+>
 

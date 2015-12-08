@@ -24,7 +24,7 @@ module.exports = {
   create100Users: function create100Users(){
     var i = 100;
     while(i>0){
-      sails.log.info(i);
+      //sails.log.info(i);
       User.create({name:"name"+i,surname:'surname_'+i,age:i}).then(function(record){sails.log.info(record)}).catch(function(err){sails.log.error(err)});
       i--;
     }

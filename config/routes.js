@@ -37,7 +37,8 @@ module.exports.routes = {
   },
   'get /hi':'simpleResponseController.hi',
   'get /bye':'simpleResponseController.bye',
-  'get /deleteall': 'UserController.deleteAllUsers'
+  'get /deleteall': 'UserController.deleteAllUsers',
+  'get /add100Users': 'UserController.add100Users'
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
