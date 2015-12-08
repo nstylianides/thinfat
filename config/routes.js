@@ -34,8 +34,10 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
-
+  },
+  'get /hi':'simpleResponseController.hi',
+  'get /bye':'simpleResponseController.bye',
+  'get /deleteall': 'UserController.deleteAllUsers'
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

@@ -6,6 +6,10 @@
  */
 
 module.exports = {
-	
+  deleteAllUsers: function deleteAllUsers(req,res){
+    User.removeAllUsers();
+    res.ok();
+  }
+
 };
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/controllers/SimpleResponseController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/controllers/UserController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/models/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/models/User.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/bootstrap.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/models.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/routes.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuidoc.json" charset="UTF-8" />
+  </component>
+</project>
