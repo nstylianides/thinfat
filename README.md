@@ -1,8 +1,10 @@
-<<<<<<< HEAD
-# models
+# Thin Controllers, Fat Models
+> Experimental project written only to document
+> our understanding through our learning process
 
-a [Sails](http://sailsjs.org) application
-=======
-# thinfat
->>>>>>> 9195e6dedc02058983a3149ace0697a5c6d710a6
+# Introduction
+> Based on the architecture of TCFM we are demonstrating with examples
+> the usage of it.
+> We also use services for completing actions in case were no data are involved
+
 
