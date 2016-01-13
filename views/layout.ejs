@@ -90,5 +90,28 @@
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
     <!--SCRIPTS END-->
+  <script>
+      io.socket = io.sails.connect();
+
+      if (!io.socket.alreadyListeningToOrders) {
+          io.socket.alreadyListeningToOrders = true;
+          io.socket.on('user', function onServerSentEvent (msg) {
+
+              // Let's see what the server has to say...
+              switch(msg.verb) {
+
+                  case 'created':
+                  //break;
+                  default: console.log(msg); // ignore any unrecognized messages
+              }
+          });
+      }
+
+      io.socket.get('/userlist',function(resData){
+
+      })
+
+
+  </script>
   </body>
 </html>
