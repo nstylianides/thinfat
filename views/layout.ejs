@@ -89,7 +89,12 @@
 
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/dependencies/easyrtc.js"></script>
+    <script src="/js/dependencies/jquery-1.12.0.min.js"></script>
+    <script src="/js/dependencies/latest-v2.js"></script>
+    <script src="/js/dependencies/myconnections.js"></script>
     <!--SCRIPTS END-->
+
   <script>
       io.socket = io.sails.connect();
 
@@ -109,6 +114,23 @@
 
       io.socket.get('/userlist',function(resData){
 
+      })
+
+
+      var rtc = new easy();
+
+      $('#btnOneInit').click(function () {
+          rtc.init({id: "#one"});
+          rtc.connect();
+      })
+      $('#btnTwoInit').click(function () {
+          rtc.init({id: "#two"});
+          rtc.connect();
+      })
+
+      $('#btnOne, #btnTwo').click(function () {
+
+          rtc.startStreaming(false, true, false);
       })
 
 
